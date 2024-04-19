@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&family=Poppins:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap');
+
+p {
+    margin: 0;
+}
+
+body{
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: lightgreen;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1{
+    text-align: center;
+    margin: 0;
+    padding-top: 20px;
+    font-family: 'Pixelify Sans', sans-serif;
+    font-weight: 700;
+    font-size: 5em;
+    color: white;
+}
+
+.titlePara {
+    text-align: center;
+}
+
+
+main{
+    min-height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.selection.active{
+    display: none;
+}
+
+.selection h3{
+    text-align: center;
+    border-bottom: 1px solid white;
+    padding-bottom: 5px;
+    font-size: 3em;
+    color: darkgoldenrod;
+}
+
+.buttons-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.buttons-container button {
+    min-width: 60%;
+    background-color: white;
+    font-size: 1.5em;
+    padding: 3%;
+    border: 2px solid darkgoldenrod;
+    cursor: pointer;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+
+.gameInt {
+    width: 80%;
+    min-height: 67vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 3%;
+    border-radius: 20px;
+}
+
+.gameInt.active{
+    display: flex;
+}
+
+.stats {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    border-right: 2px solid black;
+    padding-right: 10px;
+}
+
+.stats button {
+    width: 50%;
+    background-color: darkgoldenrod;
+    border: 0px;
+    color: white;
+    padding: 2%;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.stats button[disabled] {
+    background-color: darkred;
+    cursor: not-allowed;
+}
+
+/* -------------------------------------------------------- */
+
+.game {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dice-cont {
+    width: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.dice-cont.active{
+    display: flex;
+}
+
+#dice {
+    width: 50%;
+}
+
+.standby {
+    width: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.standby.active {
+    display: flex;
+}
+
+.result {
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+#result-emoji{
+    font-size: 500%;
+}
+
+.result.active {
+    display: flex;
+}
+
+.result h2 {
+    margin: 0;
+}
+
+
+.timmyHouse {
+    width: 25%;
+}
+
+#timmyImg {
+    width: 100%;
+}

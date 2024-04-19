@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessin Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <h1>Guessing Game</h1>
+
+    <h2 class="titlePara">Guess a number between 0 and 10, reach 15pts to win, keep an eye for your lives >;)</h2>
+
+    <main>
+
+        <div class="selection">
+
+            <h3>Choose Level : </h3>
+    
+            <div class="buttons-container">
+    
+                <button id="babyMode">GooGooGaGa 👶</button>
+    
+                <button id="normalMode">Hello 👋</button>
+    
+                <button id="hardMode">Pain. 💀</button>
+                
+            </div>
+    
+        </div>
+
+        <div class="gameInt">
+
+            <div class="stats">
+                <p class="stat" id="life">Lives : 0</p>
+                <p class="stat" id="score">Score : 0</p>
+
+                <input type="number" id="answer">
+                <button id="submit">Go</button>
+            </div>
+
+            <div class="game">
+
+                <div class="dice-cont active">
+                    <img src="assets/diceRollNew.gif" alt="dice" id="dice">
+                    <h2>Loading</h2>
+                </div>
+
+                <div class="standby">
+
+                    <img src="assets/quest.webp" alt="question mark" id="questmark">
+
+                    <h2>Guess the number</h2>
+
+                </div>
+
+                <div class="result">
+
+                    <h2 id="result-text">You Guessed Right</h2>
+
+                    <p id="result-emoji">🤩</p>
+
+                    <p id="result-expected">The correct answer is : 0</p>
+                    <p id="result-guess">Your guessed answer is : 0</p>
+
+                </div>
+
+            </div>
+
+            <div class="timmyHouse">
+                <img src="assets/deez.jpg" alt="mrTimmyV1" id="timmyImg">
+            </div>
+
+        </div>
+
+
+    </main>
+
+
+</body>
+</html>
